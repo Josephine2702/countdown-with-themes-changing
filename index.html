@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="mars"> 
+    <div class="select-container">
+    <label class="select-title" for="#select">Choose theme</label>
+    <select name="select" id="select">
+        <option value="pattern">Pattern</option>
+        <option value="mars">Mars</option>
+        <option value="city">City</option>
+        <option value="street">Street</option>
+    </select>
+    </div>
+        <video class="video__background" loop muted autoplay>
+            <source src="/assets/mars.mp4" type="">
+        </video>
+        <div class="container">
+            <div class="countdown__container" >
+                <h1 class="countdown__title title">Create a Custom Countdown</h1>
+                <form class="form">
+                    <label for="#event">Event</label>
+                    <input type="text" id="event" placeholder="What are you counting down to?">
+                    <label for="date">Select a date</label>
+                    <input type="date" id="date" >
+                    <button class="countdown__btn btn">Submit</button>
+                </form>
+            </div>
+            <div class="counter__container" hidden >
+                <h1 class="counter__title title"></h1>
+                <ul>
+                    <li><span>10</span>Days</li>
+                    <li><span>15</span>Hours</li>
+                    <li><span>45</span>Minutes</li>
+                    <li><span>59</span>Seconds</li>
+                </ul>
+                <button class="counter__btn btn">Reset</button>
+            </div>
+            <div class="complete__container" hidden>
+                <h1 class="complete__title title">Countdown complete!</h1>
+                <h2 id="complete__info"></h2>
+                <button class="complete__btn btn">New Countdown</button>
+            </div>
+        </div>
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
