@@ -7,21 +7,20 @@
     <title>Countdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-theme="mars"> 
+<body data-theme="pattern"> 
     <div class="select-container">
     <label class="select-title" for="#select">Choose theme</label>
     <select name="select" id="select">
-        <option value="pattern">Pattern</option>
+        <option selected value="pattern">Pattern</option>
         <option value="mars">Mars</option>
         <option value="city">City</option>
         <option value="street">Street</option>
     </select>
     </div>
-        <video class="video__background" loop muted autoplay>
-            <source src="/assets/mars.mp4" type="">
-        </video>
+        <video src="/assets/pattern.mp4" class="video__background" loop muted autoplay>
+            </video>
         <div class="container">
-            <div class="countdown__container" >
+            <div class="countdown__container"  >
                 <h1 class="countdown__title title">Create a Custom Countdown</h1>
                 <form class="form">
                     <label for="#event">Event</label>
